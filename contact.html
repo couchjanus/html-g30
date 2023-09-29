@@ -7,6 +7,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
     <link href="css/app.css" rel="stylesheet">
+
+    <style>
+        .grid-container {
+            display: grid;
+            /*
+            grid-template-columns: 200px 25% 7vw auto 120px;
+            grid-template-columns: 1fr 25% 7vw auto 1fr;
+            grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+            grid-template-columns: repeat(5, 1fr);
+            */
+            
+
+            gap: 1rem;
+
+            grid-template-areas: 
+             'header header header header '
+             'sidebar main main main '
+             'footer footer footer footer';
+        }
+
+        .box {
+            padding: 4ren;
+            color: white;
+            font-weight: 900;
+        }
+        .box1 {
+            background-color: red;
+            grid-area: header;
+        }
+        .box2 {
+            background-color: green;
+            grid-area: main;
+        }
+        .box3 {
+            background-color: gold;
+            grid-area: sidebar;
+
+        }
+        .box4 {
+            background-color: blue;
+            grid-area: footer;
+        }
+        .box5 {
+            background-color: magenta;
+        }
+
+    </style>
 </head>
 <body>
     <header class="page-header">
@@ -24,53 +71,80 @@
             <a href="blog.html" class="far fa-user"></a>
         </div>
     </header>
-    <h1>Contact Us</h1>
+
+    
+    <!-- <section class="grid-container py-5 mb-3">
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
+        <div class="box box4">box 4</div>
+        <div class="box box5">box 5</div>
+    </section> -->
+
+    <section class="container py-5">
+        <div class="contact-wrapper py-5">
+            <header class="contact-header mb-5">
+                <h1>Contact Us</h1>
+            </header>
+            <div class="contact-main">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non accusantium, illo dicta optio eligendi recusandae perspiciatis cumque fugiat tenetur porro eius dolor accusamus reiciendis, excepturi expedita debitis corrupti a dolorum?
+            </div>
+            <div class="contact-sidebar">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad quod dolores, autem voluptate ratione tempore pariatur temporibus saepe velit non inventore explicabo, fugit asperiores maiores rerum aspernatur ab repudiandae.
+            </div>
+
+            <div class="contact-footer">
+                footer
+            </div>
+
+        </div>
+    </section>
    
        
-<footer class="bg-dark text-white py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <h4>Services</h4>
-                <ul class="link-unstyle">
-                    <li>Contact Us</li>
-                    <li>Help</li>
-                    <li>Condition</li>
-                    <li>Term</li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <h4>Services</h4>
-                <ul class="link-unstyle">
-                    <li>Contact Us</li>
-                    <li>Help</li>
-                    <li>Condition</li>
-                    <li>Term</li>
-                </ul>
-            </div>
-            <div class="col-4">
-
-                <h4>Social Media</h4>
-                <ul class="link-unstyle">
-                    <li><a href="#" class="social-link"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"  class="social-link"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"  class="social-link"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" class="social-link"><i class="fab fa-google-plus"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="border-top pt-4">
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
             <div class="row">
-                <div class="col-6 text-start">
-                    <p class="small text-muted">&copy; 2023 All right reserved.</p>
+                <div class="col-4">
+                    <h4>Services</h4>
+                    <ul class="link-unstyle">
+                        <li>Contact Us</li>
+                        <li>Help</li>
+                        <li>Condition</li>
+                        <li>Term</li>
+                    </ul>
                 </div>
-                <div class="col-6 text-end">
-                    <p class="small text-muted">Designe by <a class="text-white" href="#">Shopaholic</a></p>
+                <div class="col-4">
+                    <h4>Services</h4>
+                    <ul class="link-unstyle">
+                        <li>Contact Us</li>
+                        <li>Help</li>
+                        <li>Condition</li>
+                        <li>Term</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+    
+                    <h4>Social Media</h4>
+                    <ul class="link-unstyle">
+                        <li><a href="#" class="social-link"><i class="fab fa-facebook"></i> facebook</a></li>
+                        <li><a href="#"  class="social-link"><i class="fab fa-twitter"></i> twitter</a> </li>
+                        <li><a href="#"  class="social-link"><i class="fab fa-instagram"></i> instagram</a></li>
+                        <li><a href="#" class="social-link"><i class="fab fa-google-plus"></i> google</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top pt-4">
+                <div class="row">
+                    <div class="col-6 text-start">
+                        <p class="small text-muted">&copy; 2023 All right reserved.</p>
+                    </div>
+                    <div class="col-6 text-end">
+                        <p class="small text-muted">Designe by <a class="text-white" href="#">Shopaholic</a></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-</footer>
+    
+    </footer>
 </body>
 </html>
