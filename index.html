@@ -53,7 +53,7 @@
         <div class="toolbar">
             <a href="index.html" class="far fa-heart"></a>
             <a href="cart.html" class="fas fa-cart-plus"></a>
-            <a href="blog.html" class="far fa-user"></a>
+            <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
         </div>
     </header>
 
@@ -201,7 +201,7 @@
                 <div class="icons">
                     <a href="#" class="fas fa-shopping-cart"></a>
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#productView" class="fas fa-eye"></a>
                 </div>
 
                 <div class="image">
@@ -221,7 +221,7 @@
                 <div class="icons">
                     <a href="#" class="fas fa-shopping-cart"></a>
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#productView" class="fas fa-eye"></a>
                 </div>
 
                 <div class="image">
@@ -240,7 +240,7 @@
                 <div class="icons">
                     <a href="#" class="fas fa-shopping-cart"></a>
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#productView" class="fas fa-eye"></a>
                 </div>
 
                 <div class="image">
@@ -260,7 +260,7 @@
                 <div class="icons">
                     <a href="#" class="fas fa-shopping-cart"></a>
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#productView" class="fas fa-eye"></a>
                 </div>
 
                 <div class="image">
@@ -279,7 +279,7 @@
                 <div class="icons">
                     <a href="#" class="fas fa-shopping-cart"></a>
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#productView" class="fas fa-eye"></a>
                 </div>
 
                 <div class="image">
@@ -298,7 +298,7 @@
                 <div class="icons">
                     <a href="#" class="fas fa-shopping-cart"></a>
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#productView" class="fas fa-eye"></a>
                 </div>
 
                 <div class="image">
@@ -428,5 +428,77 @@
 </footer>
     
 
+
+<div class="modal" id="productView">
+
+    <div class="modal-dialog">
+        <a href="#!" class="close fas fa-times"></a>
+        <div class="modal-body">
+            <aside>
+                <img src="images/product-5.jpg">
+
+            </aside>
+            <main>
+
+                <div class="info-container">
+                    <div class="info-header">
+                        <h2>Cool product</h2>
+                    </div>
+                    <div class="info-price">
+                        $555.55
+                    </div>
+                    <div class="info-shipping">
+                        Free shipping
+                    </div>
+                    <div class="qty info-qty">
+                        <input type="number">
+                    </div>
+                    <div class="info-button">
+                        <a href="#!" class="btn btn-submit"><i class="fas fa-cart-plus"></i> Add to cart</a>
+                    </div>
+                    <div class="info-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos deleniti quo illo assumenda molestiae ratione consectetur, quasi unde ex aspernatur voluptatem quisquam nisi hic modi cum repellat maiores fugiat?</p>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+
+<dialog id="login">
+    <a href="#!" onclick="window.login.close();" class="close fas fa-times"></a>
+    <div class="login-container">
+
+        <aside>
+            <div class="login-text">
+                <h2>Welcome back!</h2>
+                <p>Create Your account.<br>It's totally free.</p>
+                <a class="btn" href="#!">Sign Up</a>
+            </div>
+        </aside>
+
+        <main>
+            <div class="login-form">
+                <h2>Login</h2>
+                <form>
+                    <p>
+                        <label>Username or email<span>*</span></label>
+                        <input placeholder="Username or email" required>
+                    </p>
+                    <p>
+                        <label>Password<span>*</span></label>
+                        <input type="password" placeholder="Password" required>
+                    </p>
+                    <p>
+                        
+                        <button class="btn btn-submit" type="submit">Sign In</button>
+                    </p>
+                </form>
+            </div>
+        </main>
+    </div>
+</dialog>
 </body>
 </html>
